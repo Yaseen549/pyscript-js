@@ -1,8 +1,3 @@
-// alert("Hello world!")
-// const prompt_sync = require('prompt-sync');
-
-const prompt = require('prompt-sync')({sigint: true});
-
 // Input Funciton
 function input(text) {
   /** funciton input as in python **/
@@ -41,3 +36,8 @@ exports.type = type;
 //   return document.querySelectorAll("h1");
 // }
 // exports.h1 = h1;
+
+function pow(power, exp){
+  return power ** exp;
+}
+exports.pow = pow;
