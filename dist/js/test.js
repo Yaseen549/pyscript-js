@@ -1,7 +1,7 @@
 // alert("Hello world!")
 // const prompt_sync = require('prompt-sync');
 
-const prompt = require('prompt-sync')({sigint: true});
+// const prompt = require('prompt-sync')({sigint: true});
 
 // Input Funciton
 function input(text) {
@@ -9,33 +9,33 @@ function input(text) {
     return prompt(text);
     // prompt(text);
 }
-exports.input = input;
+// exports.input = input;
 
 // Print Function
 function print(params) {
   /** funciton print as in python **/
     console.log(params);
 }
-exports.print = print;
+// exports.print = print;
 
 // Number Function
 function number(params) {
   /** funciton int as in python **/
     return parseInt(params);
 }
-exports.number = number;
+// exports.number = number;
 
 // alert Function
 function popup(params){
   alert(params);
 }
-exports.popup = popup;
+// exports.popup = popup;
 
 // alert Function
 function type(params){
   return typeof(params);
 }
-exports.type = type;
+// exports.type = type;
 
 // function h1(params){
 //   return document.querySelectorAll("h1");

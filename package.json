@@ -1,12 +1,19 @@
 {
   "name": "pyscript-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JavaScript for Python Developers",
   "main": "dist/js/pyscript.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["pyscript.js", "pyscript", "js"],
+  "keywords": [
+    "pyscript.js",
+    "pyscript",
+    "js"
+  ],
   "author": "Yaseen",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
