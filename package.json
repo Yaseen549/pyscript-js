@@ -1,6 +1,6 @@
 {
   "name": "pyscript-js",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "description": "JavaScript for Python Developers",
   "main": "dist/js/pyscript.js",
   "scripts": {
@@ -9,7 +9,9 @@
   "keywords": [
     "pyscript.js",
     "pyscript",
-    "js"
+    "pyscript-js",
+    "js",
+    "pythonjs"
   ],
   "author": "Yaseen",
   "license": "MIT",

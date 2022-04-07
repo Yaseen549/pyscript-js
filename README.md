@@ -19,13 +19,16 @@ Use Python Functions now in JavaScript
 </p>
 
 ### CDN:
+```js
+<script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.1/dist/js/pyscript.min.js" charset="utf-8"></script>
 ```
-<script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.5/dist/js/pyscript.min.js" charset="utf-8"></script>
-```
-place it just above the end body tag above all the script tags
+<p align=center>place it just above the end body tag above all the script tags</p>
+
 
 ### Table of contents
 - [Quick start](#quick-start)
+- [Python Funcitons](#python-functions)
+- [Stub Code](#stub-code)
 - [What's included](#whats-included)
 - [Creator](#creator)
 <!-- - [Bugs and feature requests](#bugs-and-feature-requests) -->
@@ -39,27 +42,60 @@ Several quick start options are available:
 - Install with [yarn](https://wwwyarnpkg.com) `yarn add pyscript-js`
 
 <!-- Read the [Getting started page](https://PyScript.syberstar.com/) for information on the framework contents, templates, examples, and more. -->
+### Python Functions
+integrated python functions in JavaScript
+```python
+print()
+type()
+input()
+abs()
+pow()
+sorted()
+max()
+round()
+len()
+sum()
+```
 
+### Stub Code
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PyScript.js</title>
+</head>
+<body>
+
+  <!-- Your HTML Code Goes Here -->
+
+
+  <!-- End -->
+
+  <!-- Adding Scripts -->
+  <!-- Use it above all the Script Files to make use of python funtions -->
+  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.4/dist/js/pyscript.min.js" charset="utf-8"></script>
+  <!-- User Defined Scripts / Other Scripts below -->
+  <script src="ExternalJsFile.js" charset="utf-8"></script>
+</body>
+</html>
+
+```
 
 ### What's included
 
 Within the download you'll find the following directories and files, logically grouping common assets. You'll see something like this:
 
-```
+```tree
 PyScript-js/
 └── dist/
     └── js/
-        └── main.js
+        └── pyscript.js
+        └── pyscript.min.js
 ```
 
 <!-- ## Bugs and feature requests
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Syber-Lab/PyScript/blob/main/.github/CONTRIBUTING.md) (Yet to Create) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Syber-Lab/PyScript/issues/new). -->
-
-### Creator
-
-**Yaseen Sheriff**
-
-- <https://twitter.com/yaseen_sheriff>
-- <https://www.linkedin.com/in/yaseen59/>
-- <https://github.com/Yaseen549>
