@@ -1,7 +1,9 @@
 // Input Funciton
 var input = prompt;
+
 //  Print funciton
 var print = console.log;
+
 // Number function
 function number(param) {
   /** funciton int as in python **/
@@ -12,6 +14,11 @@ function number(param) {
 function int(param) {
   /** funciton int as in python **/
     return parseInt(param);
+}
+
+function float(param) {
+  /** funciton float as in python **/
+    return parseFloat(param);
 }
 
 // Lenth function
@@ -57,16 +64,21 @@ function sorted(param){
 // type Function
 function type(param){
   if (typeof(param) === typeof(1)){
-    return "int";
+    return "<function 'int'>";
   }else if(typeof(param) === typeof("string")){
-    return "str";
+    return "<function 'str'>";
   }
   else{
-    return typeof(param);
+    return "<function '"+typeof(param)+"'>";
   }
 }
 
 // power of
 function pow(power, exp){
   return Math.pow(power, exp);
+}
+
+// abs
+function abs(param){
+  return Math.abs(param)
 }

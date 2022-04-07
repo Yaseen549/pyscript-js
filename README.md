@@ -24,8 +24,8 @@ Use Python Functions now in JavaScript
 
 ### Table of contents
 - [Quick start](#quick-start)
-- [Python Funcitons](#python-functions)
-- [Stub Code](#stub-code)
+- [Python funcitons](#python-functions)
+- [Stub code](#stub-code)
 - [What's included](#whats-included)
 <!-- - [Bugs and feature requests](#bugs-and-feature-requests) -->
 
@@ -38,19 +38,24 @@ Several quick start options are available:
 - Install with [yarn](https://wwwyarnpkg.com) `yarn add pyscript-js`
 
 <!-- Read the [Getting started page](https://PyScript.syberstar.com/) for information on the framework contents, templates, examples, and more. -->
+
 ### Python Functions
 integrated python functions in JavaScript
-```python
-print()
-type()
+```js
 input()
-abs()
-pow()
-sorted()
-max()
-round()
+print()
+number()
+int()
+float()
 len()
+round()
+max()
 sum()
+popup() // Alternative to alert
+sorted()
+type()
+pow()
+abs()
 ```
 
 ### Stub Code
@@ -73,7 +78,7 @@ sum()
 
   <!-- Adding Scripts -->
   <!-- Use it above all the Script Files to make use of python functions -->
-  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.6/dist/js/pyscript.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.7/dist/js/pyscript.min.js" charset="utf-8"></script>
   <!-- User Defined Scripts / Other Scripts below -->
   <script src="ExternalJsFile.js" charset="utf-8"></script>
 </body>
@@ -88,7 +93,7 @@ Within the download you'll find the following directories and files, logically g
 PyScript-js/
 └── dist/
     └── js/
-        └── pyscript.js
+        ├── pyscript.js
         └── pyscript.min.js
 ```
 
