@@ -16,10 +16,10 @@ Use Python Functions now in JavaScript
 </p>
 
 ### CDN:
-<p>place it just above the end body tag above all the script tags</p>
+<p>Place it just above the end body tag above all the script tags</p>
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.5/dist/js/pyscript.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.6/dist/js/pyscript.min.js" charset="utf-8"></script>
 ```
 
 ### Table of contents
@@ -73,7 +73,7 @@ sum()
 
   <!-- Adding Scripts -->
   <!-- Use it above all the Script Files to make use of python functions -->
-  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@version/dist/js/pyscript.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.6/dist/js/pyscript.min.js" charset="utf-8"></script>
   <!-- User Defined Scripts / Other Scripts below -->
   <script src="ExternalJsFile.js" charset="utf-8"></script>
 </body>
@@ -82,7 +82,6 @@ sum()
 ```
 
 ### What's included
-
 Within the download you'll find the following directories and files, logically grouping common assets. You'll see something like this:
 
 ```tree

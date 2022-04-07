@@ -7,23 +7,23 @@ function number(param) {
   /** funciton int as in python **/
     return parseInt(param);
 }
-exports.number = number;
+
 // integer function
 function int(param) {
   /** funciton int as in python **/
     return parseInt(param);
 }
-exports.int = int;
+
 // Lenth function
 function len(param){
   return param.length;
 }
-exports.len = len;
+
 // Round function
 function round(param){
   return Math.round(param)
 }
-exports.round = round;
+
 // Max function
 function max(inputs){
   var maxValue = 0;
@@ -34,7 +34,7 @@ function max(inputs){
   }
   return maxValue;
 }
-exports.max = max;
+
 // function sum
 function sum(inputs){
   var sumValue = 0;
@@ -43,17 +43,17 @@ function sum(inputs){
   }
   return sumValue;
 }
-exports.sum = sum;
+
 // alert Function
 function popup(param){
   alert(param);
 }
-exports.popup = popup;
+
 // sorted funciton
 function sorted(param){
   return param.split('').sort()
 }
-exports.sorted = sorted;
+
 // type Function
 function type(param){
   if (typeof(param) === typeof(1)){
@@ -65,9 +65,8 @@ function type(param){
     return typeof(param);
   }
 }
-exports.type = type;
+
 // power of
 function pow(power, exp){
   return Math.pow(power, exp);
 }
-exports.pow = pow;
