@@ -1,43 +1,73 @@
 // Input Funciton
-function input(text) {
-  /** funciton input as in python **/
-    return prompt(text);
-    // prompt(text);
-}
-exports.input = input;
-
-// Print Function
-function print(params) {
-  /** funciton print as in python **/
-    console.log(params);
-}
-exports.print = print;
-
-// Number Function
-function number(params) {
+var input = prompt;
+//  Print funciton
+var print = console.log;
+// Number function
+function number(param) {
   /** funciton int as in python **/
-    return parseInt(params);
+    return parseInt(param);
 }
 exports.number = number;
-
+// integer function
+function int(param) {
+  /** funciton int as in python **/
+    return parseInt(param);
+}
+exports.int = int;
+// Lenth function
+function len(param){
+  return param.length;
+}
+exports.len = len;
+// Round function
+function round(param){
+  return Math.round(param)
+}
+exports.round = round;
+// Max function
+function max(inputs){
+  var maxValue = 0;
+  for (var i=0;i <=inputs.length; i++){
+    if (inputs[i] > maxValue){
+      maxValue = inputs[i];
+    }
+  }
+  return maxValue;
+}
+exports.max = max;
+// function sum
+function sum(inputs){
+  var sumValue = 0;
+  for (var i=0;i <inputs.length; i++){
+      sumValue = sumValue + inputs[i];
+  }
+  return sumValue;
+}
+exports.sum = sum;
 // alert Function
-function popup(params){
-  alert(params);
+function popup(param){
+  alert(param);
 }
 exports.popup = popup;
-
-// alert Function
-function type(params){
-  return typeof(params);
+// sorted funciton
+function sorted(param){
+  return param.split('').sort()
+}
+exports.sorted = sorted;
+// type Function
+function type(param){
+  if (typeof(param) === typeof(1)){
+    return "int";
+  }else if(typeof(param) === typeof("string")){
+    return "str";
+  }
+  else{
+    return typeof(param);
+  }
 }
 exports.type = type;
-
-// function h1(params){
-//   return document.querySelectorAll("h1");
-// }
-// exports.h1 = h1;
-
+// power of
 function pow(power, exp){
-  return power ** exp;
+  return Math.pow(power, exp);
 }
 exports.pow = pow;
