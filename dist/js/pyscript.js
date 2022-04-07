@@ -16,6 +16,7 @@ function int(param) {
     return parseInt(param);
 }
 
+// float function
 function float(param) {
   /** funciton float as in python **/
     return parseFloat(param);
@@ -63,14 +64,7 @@ function sorted(param){
 
 // type Function
 function type(param){
-  if (typeof(param) === typeof(1)){
-    return "<function 'int'>";
-  }else if(typeof(param) === typeof("string")){
-    return "<function 'str'>";
-  }
-  else{
-    return "<function '"+typeof(param)+"'>";
-  }
+    return typeof(param);
 }
 
 // power of
