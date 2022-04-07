@@ -20,7 +20,7 @@ Use Python Functions now in JavaScript
 
 ### CDN:
 ```js
-<script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.1/dist/js/pyscript.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.5/dist/js/pyscript.min.js" charset="utf-8"></script>
 ```
 <p align=center>place it just above the end body tag above all the script tags</p>
 

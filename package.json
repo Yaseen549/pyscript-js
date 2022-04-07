@@ -1,6 +1,6 @@
 {
   "name": "pyscript-js",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "JavaScript for Python Developers",
   "main": "dist/js/pyscript.js",
   "scripts": {
