@@ -8,9 +8,6 @@
 
 <p align="center">
 Use Python Functions now in JavaScript
-  <!-- <br> -->
-  <!-- <a href="https://PyScript.syberstar.com/"><strong>Explore PyScript docs »</strong></a> -->
-  <!-- <a href="https://choose-PyScript-docs.syberstar.com/"><strong>Explore PyScript.js docs »</strong></a> -->
   <br>
   <br>
   <a href="https://github.com/Yaseen549/pyscript-js/issues/new?assignees=-&labels=bug&template=bug_report.yml">Report bug</a>
