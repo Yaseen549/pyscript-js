@@ -11,11 +11,9 @@
     "pyscript",
     "pyscript-js",
     "js",
-    "pythonjs"
+    "pythonjs",
+    "javascript"
   ],
   "author": "Yaseen",
-  "license": "MIT",
-  "dependencies": {
-    "prompt-sync": "^4.2.0"
-  }
+  "license": "MIT"
 }

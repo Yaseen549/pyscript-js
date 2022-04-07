@@ -13,9 +13,9 @@ Use Python Functions now in JavaScript
   <!-- <a href="https://choose-PyScript-docs.syberstar.com/"><strong>Explore PyScript.js docs »</strong></a> -->
   <br>
   <br>
-  <!-- <a href="https://github.com/Syber-Lab/PyScript/issues/new?assignees=&labels=bug&template=bug_report.yml">Report bug</a> -->
-  <!-- · -->
-  <!-- <a href="https://github.com/Syber-Lab/PyScript/issues/new?assignees=&labels=feature&template=feature_request.yml">Request feature</a> -->
+  <a href="https://github.com/Syber-Lab/PyScript/issues/new?assignees=&labels=bug&template=bug_report.yml">Report bug</a>
+  ·
+  <a href="https://github.com/Syber-Lab/PyScript/issues/new?assignees=&labels=feature&template=feature_request.yml">Request feature</a>
 </p>
 
 ### CDN:
@@ -71,12 +71,13 @@ sum()
 
   <!-- Your HTML Code Goes Here -->
 
+  ...
 
   <!-- End -->
 
   <!-- Adding Scripts -->
   <!-- Use it above all the Script Files to make use of python funtions -->
-  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.4/dist/js/pyscript.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@version/dist/js/pyscript.min.js" charset="utf-8"></script>
   <!-- User Defined Scripts / Other Scripts below -->
   <script src="ExternalJsFile.js" charset="utf-8"></script>
 </body>

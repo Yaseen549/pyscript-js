@@ -60,5 +60,12 @@ function sum(inputs){
 }
 print(sum(b))
 
+function dare(){
+  // Returns Null
+  return null;
+}
+
+
+
 
 // document.querySelector("h1").innerHTML = 5;
