@@ -13,24 +13,23 @@ Use Python Functions now in JavaScript
   <!-- <a href="https://choose-PyScript-docs.syberstar.com/"><strong>Explore PyScript.js docs »</strong></a> -->
   <br>
   <br>
-  <a href="https://github.com/Syber-Lab/PyScript/issues/new?assignees=&labels=bug&template=bug_report.yml">Report bug</a>
+  <a href="https://github.com/Yaseen549/pyscript-js/issues/new?assignees=-&labels=bug&template=bug_report.yml">Report bug</a>
   ·
-  <a href="https://github.com/Syber-Lab/PyScript/issues/new?assignees=&labels=feature&template=feature_request.yml">Request feature</a>
+  <a href="https://github.com/Yaseen549/PyScript-js/issues/new?assignees=&labels=feature&template=feature_request.yml">Request feature</a>
 </p>
 
 ### CDN:
+<p>place it just above the end body tag above all the script tags</p>
+
 ```js
 <script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.5/dist/js/pyscript.min.js" charset="utf-8"></script>
 ```
-<p align=center>place it just above the end body tag above all the script tags</p>
-
 
 ### Table of contents
 - [Quick start](#quick-start)
 - [Python Funcitons](#python-functions)
 - [Stub Code](#stub-code)
 - [What's included](#whats-included)
-- [Creator](#creator)
 <!-- - [Bugs and feature requests](#bugs-and-feature-requests) -->
 
 ### Quick start
@@ -76,7 +75,7 @@ sum()
   <!-- End -->
 
   <!-- Adding Scripts -->
-  <!-- Use it above all the Script Files to make use of python funtions -->
+  <!-- Use it above all the Script Files to make use of python functions -->
   <script src="https://cdn.jsdelivr.net/npm/pyscript-js@version/dist/js/pyscript.min.js" charset="utf-8"></script>
   <!-- User Defined Scripts / Other Scripts below -->
   <script src="ExternalJsFile.js" charset="utf-8"></script>

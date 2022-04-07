@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yaseen549/pyscript-js.git"
+  },
   "keywords": [
     "pyscript.js",
     "pyscript",
@@ -15,5 +19,9 @@
     "javascript"
   ],
   "author": "Yaseen",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yaseen549/pyscript-js/issues"
+  },
+  "homepage": "https://github.com/Yaseen549/pyscript-js#readme"
 }
