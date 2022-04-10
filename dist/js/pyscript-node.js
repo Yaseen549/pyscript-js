@@ -1,5 +1,6 @@
 // Input Funciton
-var input = prompt;
+// var input = prompt;
+// exports.input = input;
 
 //  Print funciton
 var print = console.log;
