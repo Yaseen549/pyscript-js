@@ -1,8 +1,8 @@
 {
   "name": "pyscript-js",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "JavaScript for Python Developers",
-  "main": "dist/js/pyscript.js",
+  "main": "dist/js/pyscript-node.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
