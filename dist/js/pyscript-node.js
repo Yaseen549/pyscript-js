@@ -1,17 +1,10 @@
-// Input Funciton
+// Input Funciton - deprecated
 // var input = prompt;
 // exports.input = input;
 
 //  Print funciton
 var print = console.log;
 exports.print = print;
-
-// Number function
-function number(param) {
-  /** funciton int as in python **/
-  return parseInt(param);
-}
-exports.number = number;
 
 // integer function
 function int(param) {
@@ -33,6 +26,21 @@ function str(param) {
   return param.toString();
 }
 exports.str = str;
+
+// character function
+function chr(value) {
+  if (typeof(value) == typeof(Object())) {
+    arrayValue = []
+    for (var i = 0; i <= value.length - 1; i++) {
+      value1 = value[i]
+      arrayValue.push(String.fromCharCode(value1));
+    }
+    return arrayValue;
+  } else {
+    return String.fromCharCode(value);
+  }
+}
+exports.chr = chr;
 
 // Lenth function
 function len(param) {
@@ -58,7 +66,19 @@ function max(inputs) {
 }
 exports.max = max;
 
-// function sum
+// Min function
+function min(inputs) {
+  minValue = inputs[0]
+  for (var i = 0; i <= inputs.length; i++) {
+    if (inputs[i] < minValue) {
+      minValue = inputs[i];
+    }
+  }
+  return minValue;
+}
+exports.min = min;
+
+// sum function
 function sum(inputs) {
   var sumValue = 0;
   for (var i = 0; i < inputs.length; i++) {
@@ -68,12 +88,6 @@ function sum(inputs) {
 }
 exports.sum = sum;
 
-// alert Function
-function popup(param) {
-  alert(param);
-}
-exports.popup = popup;
-
 // sorted funciton
 function sorted(param) {
   return param.split('').sort()
@@ -82,22 +96,23 @@ exports.sorted = sorted;
 
 // type Function
 function type(param) {
-  if (typeof(param) === typeof(1)) {
+  if (typeof(param) === typeof(Number())) {
     return "int";
-  } else if (typeof(param) === typeof("string")) {
+  } else if (typeof(param) === typeof(String())) {
     return "str";
   } else {
     return typeof(param);
   }
 }
 exports.type = type;
-// power of
+
+// power of function
 function pow(power, exp) {
   return Math.pow(power, exp);
 }
 exports.pow = pow;
 
-// abs
+// absolute function
 function abs(param) {
   return Math.abs(param);
 }

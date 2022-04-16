@@ -19,7 +19,7 @@ Use Python Functions now in JavaScript
 <p>Place it just above the end body tag above all the script tags</p>
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.10/dist/js/pyscript.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.11/dist/js/pyscript.min.js" charset="utf-8"></script>
 ```
 
 ### Table of contents
@@ -41,22 +41,27 @@ Several quick start options are available:
 
 ### Python Functions
 integrated python functions in JavaScript
-```js
+```python
 input()
 print()
-number()
 int()
 float()
 str()
+chr() # single value
+chr([]) # Multiple Values as Array
 len()
 round()
 max()
+min()
 sum()
-popup() // Alternative to alert
 sorted()
 type()
 pow()
 abs()
+
+# deprecated from
+number()
+popup()
 ```
 
 ### Stub Code
@@ -79,7 +84,7 @@ abs()
 
   <!-- Adding Scripts -->
   <!-- Use it above all the Script Files to make use of python functions -->
-  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.10/dist/js/pyscript.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.11/dist/js/pyscript.min.js" charset="utf-8"></script>
   <!-- User Defined Scripts / Other Scripts below -->
   <script src="ExternalJsFile.js" charset="utf-8"></script>
 </body>
@@ -90,7 +95,7 @@ abs()
 ### What's included
 Within the download you'll find the following directories and files, logically grouping common assets. You'll see something like this:
 
-```tree
+```
 PyScript-js/
 └── dist/
     └── js/
@@ -100,4 +105,4 @@ PyScript-js/
 
 <!-- ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Syber-Lab/PyScript/blob/main/.github/CONTRIBUTING.md) (Yet to Create) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Syber-Lab/PyScript/issues/new). -->
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Yaseen549/pyscript-js/blob/main/.github/CONTRIBUTING.md) (Yet to Create) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Yaseen549/pyscript-js/issues/new). -->
