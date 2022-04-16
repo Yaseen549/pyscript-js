@@ -32,7 +32,7 @@ Use Python Functions now in JavaScript
 ### Quick start
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v0.0.11.zip)
+- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v0.0.11-alpha.zip)
 - Clone the repo: `git clone https://github.com/Yaseen549/pyscript-js.git`
 - Install with [npm](https://www.npmjs.com/): `npm i pyscript-js`
 - Install with [yarn](https://wwwyarnpkg.com) `yarn add pyscript-js`
