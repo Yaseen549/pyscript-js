@@ -19,7 +19,7 @@ Use Python Functions now in JavaScript
 <p>Place it just above the end body tag above all the script tags</p>
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.11/dist/js/pyscript.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.0.0/dist/js/pyscript.min.js" charset="utf-8"></script>
 ```
 
 ### Table of contents
@@ -32,7 +32,7 @@ Use Python Functions now in JavaScript
 ### Quick start
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v0.0.11-alpha.zip)
+- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v1.0.0-alpha.zip)
 - Clone the repo: `git clone https://github.com/Yaseen549/pyscript-js.git`
 - Install with [npm](https://www.npmjs.com/): `npm i pyscript-js`
 - Install with [yarn](https://wwwyarnpkg.com) `yarn add pyscript-js`
@@ -86,7 +86,7 @@ popup()
 
   <!-- Adding Scripts -->
   <!-- Use it above all the Script Files to make use of python functions -->
-  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@0.0.11/dist/js/pyscript.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.0.0/dist/js/pyscript.min.js" charset="utf-8"></script>
   <!-- User Defined Scripts / Other Scripts below -->
   <script src="ExternalJsFile.js" charset="utf-8"></script>
 </body>
