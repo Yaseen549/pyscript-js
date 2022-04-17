@@ -37,7 +37,7 @@ Several quick start options are available:
 - Install with [npm](https://www.npmjs.com/): `npm i pyscript-js`
 - Install with [yarn](https://wwwyarnpkg.com) `yarn add pyscript-js`
 
-<!-- Read the [Getting started page](https://PyScript.syberstar.com/) for information on the framework contents, templates, examples, and more. -->
+<!-- Read the [Getting started page](https://PyScript.syberstar.com/) for information on the Library contents, templates, examples, and more. -->
 
 ### Python Functions
 integrated python functions in JavaScript
@@ -47,8 +47,10 @@ print()
 int()
 float()
 str()
-chr()   # single value
-chr([]) # Multiple Values as Array
+chr()   # Takes single value eg: chr(95)
+chr([]) # Multiple Values as Array eg: print(chr([65,66]))
+ascii() # getitng ascii values from string values. eg: ascii("a")
+hex()
 len()
 round()
 max()

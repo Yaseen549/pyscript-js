@@ -36,6 +36,16 @@ function chr(value) {
   }
 }
 
+// ascii Function
+function ascii(value){
+  return value.charCodeAt();
+}
+
+// hexa value function
+function hex(value){
+  return "0x" + value.toString(16);
+}
+
 // Lenth function
 function len(param) {
   return param.length;
@@ -93,12 +103,12 @@ function type(param) {
   }
 }
 
-// power of
+// power of function
 function pow(power, exp) {
   return Math.pow(power, exp);
 }
 
-// abs
+// abs function
 function abs(param) {
   return Math.abs(param);
 }

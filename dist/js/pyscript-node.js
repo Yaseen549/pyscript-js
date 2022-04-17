@@ -42,6 +42,18 @@ function chr(value) {
 }
 exports.chr = chr;
 
+// ascii Function
+function ascii(value){
+  return value.charCodeAt();
+}
+exports.ascii = ascii;
+
+// hexa value function
+function hex(value){
+  return "0x" + value.toString(16);
+}
+exports.hex = hex;
+
 // Lenth function
 function len(param) {
   return param.length;
