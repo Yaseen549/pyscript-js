@@ -101,6 +101,8 @@ Within the download you'll find the following directories and files, logically g
 PyScript-js/
 └── dist/
     └── js/
+        ├── pyscript-node.js
+        ├── pyscript-node.min.js
         ├── pyscript.js
         └── pyscript.min.js
 ```
