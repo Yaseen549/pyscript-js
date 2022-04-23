@@ -7,7 +7,7 @@
 <h3 align="center">PyScript.js</h3>
 
 <p align="center">
-Use Python Functions now in JavaScript
+Use python functions now in JavaScript
   <br>
   <br>
   <a href="https://github.com/Yaseen549/pyscript-js/issues/new?assignees=-&labels=bug&template=bug_report.yml">Report bug</a>
@@ -24,7 +24,7 @@ Use Python Functions now in JavaScript
 
 ### Table of contents
 - [Quick start](#quick-start)
-- [Python funcitons](#python-functions)
+- [Python functions](#python-functions)
 - [Stub code](#stub-code)
 - [What's included](#whats-included)
 <!-- - [Bugs and feature requests](#bugs-and-feature-requests) -->
@@ -35,9 +35,9 @@ Several quick start options are available:
 - [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v1.0.0-alpha.zip)
 - Clone the repo: `git clone https://github.com/Yaseen549/pyscript-js.git`
 - Install with [npm](https://www.npmjs.com/): `npm i pyscript-js`
-- Install with [yarn](https://wwwyarnpkg.com) `yarn add pyscript-js`
+- Install with [yarn](https://www.yarnpkg.com): `yarn add pyscript-js`
 
-<!-- Read the [Getting started page](https://PyScript.syberstar.com/) for information on the Library contents, templates, examples, and more. -->
+<!-- Read the [Getting started page](https://pyscript.syberstar.com/) for information on the Library contents, templates, examples, and more. -->
 
 ### Python Functions
 integrated python functions in JavaScript
@@ -49,7 +49,7 @@ float()
 str()
 chr()   # Takes single value eg: chr(95)
 chr([]) # Multiple Values as Array eg: print(chr([65,66]))
-ascii() # getitng ascii values from string values. eg: ascii("a")
+ascii() # getting ascii values from string values. eg: ascii("a")
 hex()
 len()
 round()
