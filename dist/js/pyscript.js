@@ -112,3 +112,10 @@ function pow(power, exp) {
 function abs(param) {
   return Math.abs(param);
 }
+
+// Python Random function
+class random {
+  static randInt(v1, v2) {
+    return Math.round(Math.random(v1,v2)*(v2-1));
+  }
+}
