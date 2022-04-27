@@ -6,12 +6,18 @@
 var print = console.log;
 exports.print = print;
 
+// String.prototype.upper = function(){
+//   return this.toUpperCase();
+// }
+// exports.upper = String.prototype.upper;
+
+
 // integer function
-function int(param) {
+exports.int = function(param) {
   /** funciton int as in python **/
   return parseInt(param);
 }
-exports.int = int;
+// exports.int = int;
 
 // float function
 function float(param) {
@@ -129,3 +135,23 @@ function abs(param) {
   return Math.abs(param);
 }
 exports.abs = abs;
+
+// Python Random function
+class random {
+  static randInt(v1, v2) {
+    return Math.round(Math.random(v1,v2)*(v2));
+  }
+  static choice(a){
+    var randomNumber = Math.round(Math.random(0,a.length)*(a.length - 1));
+    var randomElement = a[randomNumber]
+    return randomElement;
+  }
+}
+exports.random = random;
+
+
+
+// var lowr = String.prototype.lower = function(){
+//   return this.toLowerCase();
+// }
+// exports.lowr = lowr

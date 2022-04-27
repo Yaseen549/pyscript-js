@@ -116,6 +116,22 @@ function abs(param) {
 // Python Random function
 class random {
   static randInt(v1, v2) {
-    return Math.round(Math.random(v1,v2)*(v2-1));
+    return Math.round(Math.random(v1,v2)*(v2));
+  }
+  static choice(a){
+    var randomNumber = Math.round(Math.random(0,a.length)*(a.length - 1));
+    var randomElement = a[randomNumber]
+    return randomElement;
   }
 }
+// Methods
+String.prototype.upper = function(){
+  return this.toUpperCase();
+}
+String.prototype.lower = function(){
+  return this.toLowerCase();
+}
+String.prototype.join = function(){
+  return this.join();
+}
+

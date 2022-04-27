@@ -61,6 +61,11 @@ type()
 pow()
 abs()
 
+# dot functions
+"".upper()
+"".lower()
+"".join()
+
 # deprecated
 number()
 popup()
