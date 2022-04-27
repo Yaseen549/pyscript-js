@@ -134,4 +134,9 @@ String.prototype.lower = function(){
 String.prototype.join = function(){
   return this.join();
 }
+String.prototype.titleCase = function(){
+  return this.toLowerCase().split(' ').map(function(word) {
+             return word.replace(word[0], word[0].toUpperCase());
+         }).join(' ');
+}
 
