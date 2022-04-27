@@ -65,6 +65,7 @@ abs()
 "".upper()
 "".lower()
 "".join()
+"".titleCase()
 
 # deprecated
 number()
