@@ -43,13 +43,14 @@ Several quick start options are available:
 integrated python functions in JavaScript
 ```python
 input()
-print()
+print()   # '''will override print() in JavaScript
+jsprint() # to use native js print() method
 int()
 float()
 str()
-chr()   # Takes single value eg: chr(95)
-chr([]) # Multiple Values as Array eg: print(chr([65,66]))
-ascii() # getting ascii values from string values. eg: ascii("a")
+chr()     # Takes single value eg: chr(95)
+chr([])   # Multiple Values as Array eg: print(chr([65,66]))
+ascii()   # getting ascii values from string values. eg: ascii("a")
 hex()
 len()
 round()
@@ -61,11 +62,20 @@ type()
 pow()
 abs()
 
+# random class
+random.randInt()
+random.choice()
+
 # dot functions
 "".upper()
 "".lower()
 "".join()
-"".titleCase()
+"".title()
+"".capitalize()
+
+# in-build Js functions
+"".join()
+"".split()
 
 # deprecated
 number()

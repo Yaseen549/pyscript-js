@@ -3,21 +3,15 @@
 // exports.input = input;
 
 //  Print funciton
-var print = console.log;
+let print = console.log;
 exports.print = print;
 
-// String.prototype.upper = function(){
-//   return this.toUpperCase();
-// }
-// exports.upper = String.prototype.upper;
-
-
 // integer function
-exports.int = function(param) {
+function int(param) {
   /** funciton int as in python **/
   return parseInt(param);
 }
-// exports.int = int;
+exports.int = int;
 
 // float function
 function float(param) {
@@ -122,7 +116,7 @@ function type(param) {
     return typeof(param);
   }
 }
-exports.type = type;
+exports.type = type
 
 // power of function
 function pow(power, exp) {
@@ -149,9 +143,26 @@ class random {
 }
 exports.random = random;
 
+// dot functions
+String.prototype.upper = function(){
+  return this.toUpperCase();
+}
+exports.upper = String.prototype.upper;
 
+String.prototype.lower = function(){
+  return this.toLowerCase();
+}
+exports.lower = String.prototype.lower;
 
-// var lowr = String.prototype.lower = function(){
-//   return this.toLowerCase();
-// }
-// exports.lowr = lowr
+String.prototype.title = function() {
+  return this.toLowerCase().split(' ').map(function(word) {
+    return word.replace(word[0], word[0].toUpperCase());
+  }).join(' ');
+}
+exports.title = String.prototype.title;
+
+String.prototype.capitalize = function() {
+  return this.charAt(0).toUpperCase() + this.slice(1);
+}
+exports.capitalize = String.prototype.capitalize;
+

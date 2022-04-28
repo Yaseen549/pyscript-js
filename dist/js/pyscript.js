@@ -2,7 +2,11 @@
 var input = prompt;
 
 //  Print funciton
-var print = console.log;
+let print = console.log;
+
+function jsprint(){
+  window.print();
+}
 
 // integer function
 function int(param) {
@@ -37,12 +41,12 @@ function chr(value) {
 }
 
 // ascii Function
-function ascii(value){
+function ascii(value) {
   return value.charCodeAt();
 }
 
 // hexa value function
-function hex(value){
+function hex(value) {
   return "0x" + value.toString(16);
 }
 
@@ -116,27 +120,27 @@ function abs(param) {
 // Python Random function
 class random {
   static randInt(v1, v2) {
-    return Math.round(Math.random(v1,v2)*(v2));
+    return Math.round(Math.random(v1, v2) * (v2));
   }
-  static choice(a){
-    var randomNumber = Math.round(Math.random(0,a.length)*(a.length - 1));
+  static choice(a) {
+    var randomNumber = Math.round(Math.random(0, a.length) * (a.length - 1));
     var randomElement = a[randomNumber]
     return randomElement;
   }
 }
-// Methods
-String.prototype.upper = function(){
+
+// dot functions
+String.prototype.upper = function() {
   return this.toUpperCase();
 }
-String.prototype.lower = function(){
+String.prototype.lower = function() {
   return this.toLowerCase();
 }
-String.prototype.join = function(){
-  return this.join();
-}
-String.prototype.titleCase = function(){
+String.prototype.title = function() {
   return this.toLowerCase().split(' ').map(function(word) {
-             return word.replace(word[0], word[0].toUpperCase());
-         }).join(' ');
+    return word.replace(word[0], word[0].toUpperCase());
+  }).join(' ');
 }
-
+String.prototype.capitalize = function() {
+  return this.charAt(0).toUpperCase() + this.slice(1);
+}
