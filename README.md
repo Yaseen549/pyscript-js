@@ -19,7 +19,7 @@ Use python functions now in JavaScript
 <p>Place it just above the end body tag above all the script tags</p>
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.0.0/dist/js/pyscript.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.0/dist/js/pyscript.min.js" charset="utf-8"></script>
 ```
 
 ### Table of contents
@@ -27,12 +27,12 @@ Use python functions now in JavaScript
 - [Python functions](#python-functions)
 - [Stub code](#stub-code)
 - [What's included](#whats-included)
-<!-- - [Bugs and feature requests](#bugs-and-feature-requests) -->
+- [Bugs and feature requests](#bugs-and-feature-requests)
 
 ### Quick start
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v1.0.0-alpha.zip)
+- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v1.2.0.zip)
 - Clone the repo: `git clone https://github.com/Yaseen549/pyscript-js.git`
 - Install with [npm](https://www.npmjs.com/): `npm i pyscript-js`
 - Install with [yarn](https://www.yarnpkg.com): `yarn add pyscript-js`
@@ -63,13 +63,14 @@ pow()
 abs()
 
 # random class
-random.randInt()
+random.randint()
+random.randrange()
 random.choice()
+random.shuffle()
 
 # dot functions
 "".upper()
 "".lower()
-"".join()
 "".title()
 "".capitalize()
 
@@ -77,12 +78,10 @@ random.choice()
 "".join()
 "".split()
 
-# deprecated
-number()
-popup()
 ```
 
 ### Stub Code
+index.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -102,12 +101,38 @@ popup()
 
   <!-- Adding Scripts -->
   <!-- Use it above all the Script Files to make use of python functions -->
-  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.0.0/dist/js/pyscript.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.0/dist/js/pyscript.min.js" charset="utf-8"></script>
   <!-- User Defined Scripts / Other Scripts below -->
   <script src="ExternalJsFile.js" charset="utf-8"></script>
+  <!-- or -->
+  <script src="script.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    print("Hello User!") // inspect -> console tab
+  </script>
 </body>
 </html>
 
+```
+script.js
+
+```js
+// script.js file
+// program to generate fibonacci series up to n terms
+
+// take input from the user
+number = int(input('Enter the number of terms: '));
+n1 = 0,
+n2 = 1,
+nextTerm = 0;
+
+print('Fibonacci Series:');
+
+for (let i = 1; i <= number; i++) {
+    print(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+}
 ```
 
 ### What's included
@@ -123,6 +148,6 @@ PyScript-js/
         └── pyscript.min.js
 ```
 
-<!-- ## Bugs and feature requests
+## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Yaseen549/pyscript-js/blob/main/.github/CONTRIBUTING.md) (Yet to Create) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Yaseen549/pyscript-js/issues/new). -->
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Yaseen549/pyscript-js/blob/main/.github/CONTRIBUTING.md) (in progress) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Yaseen549/pyscript-js/issues/new).

@@ -132,13 +132,26 @@ exports.abs = abs;
 
 // Python Random function
 class random {
-  static randInt(v1, v2) {
-    return Math.round(Math.random(v1,v2)*(v2));
+  static randint(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  static randrange(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
   }
   static choice(a){
     var randomNumber = Math.round(Math.random(0,a.length)*(a.length - 1));
     var randomElement = a[randomNumber]
     return randomElement;
+  }
+  static shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+    return array;
   }
 }
 exports.random = random;
