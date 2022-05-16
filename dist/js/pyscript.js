@@ -51,7 +51,7 @@ function hex(value) {
   return "0x" + value.toString(16);
 }
 
-// Lenth function
+// len(list): It gives the overall length of the list.
 function len(param) {
   return param.length;
 }
@@ -61,7 +61,7 @@ function round(param) {
   return Math.round(param)
 }
 
-// Max function
+// max(list): It returns an item from the list with a max value.
 function max(inputs) {
   var maxValue = inputs[0];
   for (var i = 0; i <= inputs.length; i++) {
@@ -72,7 +72,7 @@ function max(inputs) {
   return maxValue;
 }
 
-// Min function
+// min(list): It returns an item from the list with a min value.
 function min(inputs) {
   minValue = inputs[0]
   for (var i = 0; i <= inputs.length; i++) {
@@ -97,7 +97,7 @@ function sorted(param) {
   return param.split('').sort()
 }
 
-// type Function
+// type(list): It returns the class type of an object.
 function type(param) {
   if (typeof(param) === typeof(Number())) {
     return "int";
@@ -159,4 +159,65 @@ String.prototype.title = function() {
 }
 String.prototype.capitalize = function() {
   return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
+// sort(): Sorts the list in ascending order. | exist ---
+// append(): Adds one element to a list.
+Array.prototype.append = function(value) {
+  return this.push(value);
+}
+// extend(): Adds multiple elements to a list.
+Array.prototype.extend = function (value){
+  return this.concat(value)
+}
+// index(): Returns the first appearance of a particular value.
+String.prototype.index = function (value) {
+  return this.indexOf(value);
+}
+Array.prototype.index = function (value) {
+  return this.indexOf(value);
+}
+// insert(): Adds a component at the required position.
+Array.prototype.insert = function ( index, item ) {
+    return this.splice( index, 0, item );
+};
+// clear(): Removes all the elements from the list.
+Array.prototype.clear = function() {
+    this.splice(0, this.length);
+};
+
+
+// count(): Returns the number of elements with the required value.
+// Object.defineProperties(Array.prototype, {
+//     count: {
+//         value: function(value) {
+//             return this.filter(x => x==value).length;
+//         }
+//     }
+// });
+Array.prototype.count = function (value){
+  return this.filter(x => x==value).length;
+}
+// pop(): Removes the element at the required position. | exist --
+// remove(): Removes the primary item with the desired value.
+Array.prototype.remove = function(value){
+  let indexOfElem = this.indexOf(value);
+  if (indexOfElem > -1) {
+      this.splice(indexOfElem, 1);
+  }
+  return this;
+}
+
+// reverse(): Reverses the order of the list. | exist --
+// copy():  Returns a duplicate of the list.
+Array.prototype.copy = function (){
+  return Array.from(this);
+}
+
+String.prototype.charList = function (){
+  return Array.from(this);
+}
+
+String.prototype.wordList = function (){
+  return this.split(' ');
 }

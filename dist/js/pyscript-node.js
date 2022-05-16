@@ -160,22 +160,94 @@ exports.random = random;
 String.prototype.upper = function(){
   return this.toUpperCase();
 }
-exports.upper = String.prototype.upper;
 
 String.prototype.lower = function(){
   return this.toLowerCase();
 }
-exports.lower = String.prototype.lower;
+
 
 String.prototype.title = function() {
   return this.toLowerCase().split(' ').map(function(word) {
     return word.replace(word[0], word[0].toUpperCase());
   }).join(' ');
 }
-exports.title = String.prototype.title;
+
 
 String.prototype.capitalize = function() {
   return this.charAt(0).toUpperCase() + this.slice(1);
 }
-exports.capitalize = String.prototype.capitalize;
+
+
+// sort(): Sorts the list in ascending order. | exist ---
+// append(): Adds one element to a list.
+Array.prototype.append = function(value) {
+  return this.push(value);
+}
+
+// extend(): Adds multiple elements to a list.
+Array.prototype.extend = function (value){
+  return this.concat(value)
+}
+
+// index(): Returns the first appearance of a particular value.
+String.prototype.index = function (value) {
+  return this.indexOf(value);
+}
+
+
+Array.prototype.index = function (value) {
+  return this.indexOf(value);
+}
+
+// insert(): Adds a component at the required position.
+Array.prototype.insert = function ( index, item ) {
+    return this.splice( index, 0, item );
+};
+
+// clear(): Removes all the elements from the list.
+Array.prototype.clear = function() {
+    this.splice(0, this.length);
+};
+
+
+// count(): Returns the number of elements with the required value.
+// Object.defineProperties(Array.prototype, {
+//     count: {
+//         value: function(value) {
+//             return this.filter(x => x==value).length;
+//         }
+//     }
+// });
+Array.prototype.count = function (value){
+  return this.filter(x => x==value).length;
+}
+
+
+// pop(): Removes the element at the required position. | exist --
+// remove(): Removes the primary item with the desired value.
+Array.prototype.remove = function(value){
+  let indexOfElem = this.indexOf(value);
+  if (indexOfElem > -1) {
+      this.splice(indexOfElem, 1);
+  }
+  return this;
+}
+
+
+// reverse(): Reverses the order of the list. | exist --
+// copy():  Returns a duplicate of the list.
+Array.prototype.copy = function (){
+  return Array.from(this);
+}
+
+
+String.prototype.charList = function (){
+  return Array.from(this);
+}
+
+
+String.prototype.wordList = function (){
+  return this.split(' ');
+}
+
 
