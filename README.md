@@ -19,7 +19,7 @@ Use python functions now in JavaScript
 <p>Place it just above the end body tag above all the script tags</p>
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.0/dist/js/pyscript.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.4/dist/js/pyscript.min.js" charset="utf-8"></script>
 ```
 
 ### Table of contents
@@ -32,18 +32,18 @@ Use python functions now in JavaScript
 ### Quick start
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v1.2.0.zip)
+- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v1.2.4.zip)
 - Clone the repo: `git clone https://github.com/Yaseen549/pyscript-js.git`
 - Install with [npm](https://www.npmjs.com/): `npm i pyscript-js`
 - Install with [yarn](https://www.yarnpkg.com): `yarn add pyscript-js`
 
-<!-- Read the [Getting started page](https://pyscript.syberstar.com/) for information on the Library contents, templates, examples, and more. -->
+Read the [Getting started page](https://pyscript-js.syberstar.com/) for information on the Library contents, examples, and more.
 
 ### Python Functions
 integrated python functions in JavaScript
 ```python
 input()
-print()   # '''will override print() in JavaScript
+print()   # Will override print() in JavaScript
 jsprint() # to use native js print() method
 int()
 float()
@@ -73,11 +73,26 @@ random.shuffle()
 "".lower()
 "".title()
 "".capitalize()
+[].append()
+[].extend()
+[].index()     # find index value of an item in list
+"".index()     # find index value of a value in String
+[].insert()
+[].clear()
+[].count()
+[].remove()
+[].copy()
 
-# in-build Js functions
+# in-built existing Js functions of Python
 "".join()
 "".split()
+[].sort()
+[].pop()
+[].reverse()
 
+# Play Around functions
+"".charList() # converts string into list of characters
+"".wordList() # converts string (Sentence) into list of Strings (words)
 ```
 
 ### Stub Code
@@ -101,7 +116,7 @@ index.html
 
   <!-- Adding Scripts -->
   <!-- Use it above all the Script Files to make use of python functions -->
-  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.0/dist/js/pyscript.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.4/dist/js/pyscript.min.js" charset="utf-8"></script>
   <!-- User Defined Scripts / Other Scripts below -->
   <script src="ExternalJsFile.js" charset="utf-8"></script>
   <!-- or -->
@@ -150,4 +165,5 @@ PyScript-js/
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Yaseen549/pyscript-js/blob/main/.github/CONTRIBUTING.md) (in progress) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Yaseen549/pyscript-js/issues/new).
+<!-- Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Yaseen549/pyscript-js/blob/main/.github/CONTRIBUTING.md) (in progress) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Yaseen549/pyscript-js/issues/new). -->
+Have a bug or a feature request? Please first search for existing and closed [issues](https://github.com/Yaseen549/pyscript-js/issues). If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Yaseen549/pyscript-js/issues/new).
