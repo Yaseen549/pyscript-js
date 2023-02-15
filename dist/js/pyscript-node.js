@@ -130,6 +130,80 @@ function abs(param) {
 }
 exports.abs = abs;
 
+// range functions
+const range = (start, end, step = 1) => {
+  let output = [];
+  if (typeof(start) == typeof(String())) {
+    start = start.charCodeAt(start)
+    end = end.charCodeAt(end)
+    for (let i = start; i <= end; i += step) {
+      output.push(String.fromCharCode(i))
+    }
+  } else {
+    if (typeof end === 'undefined') {
+      end = start;
+      start = 0;
+    }
+    for (let i = start; i < end; i += step) {
+      output.push(i);
+    }
+  }
+  return output;
+};
+exports.range = range;
+const alphabet = () => {
+  const alpha = Array.from(Array(26)).map((e, i) => i + 97);
+  const alphabetLetters = alpha.map((x) => String.fromCharCode(x));
+  return alphabetLetters;
+}
+exports.alphabet = alphabet;
+const vowels = (listOfArrays) => {
+  const vowelsList = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  let alpha2 = [];
+  var vowelsArr = [];
+  var vowelsFound = [];
+
+  if (typeof(listOfArrays) === typeof("String")) {
+    alpha2 = listOfArrays;
+    var letters = alpha2.split('');
+    for (var i in letters) {
+      if (vowelsList.includes(letters[i])) {
+        vowelsFound.push(letters[i]);
+        vowelsArr = vowelsFound;
+      }
+    }
+  } else if (typeof(listOfArrays) === typeof(["hi"])) {
+    alpha2 = listOfArrays;
+    const toRemove = new Set(vowelsList);
+    vowelsArr = alpha2.filter(x => toRemove.has(x));
+  } else {
+    vowelsArr = ["a","e","i","o","u"]
+  }
+  return vowelsArr;
+}
+exports.vowels = vowels;
+const consonants = (listOfArrays) => {
+  alphasCopy = alphabet();
+  vowelsCopy = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  var consonantsFound = [];
+  let consonants;
+
+  const toRemove = new Set(vowelsCopy);
+
+  if (typeof(listOfArrays) === typeof("String")) {
+    alpha2 = listOfArrays;
+    var letters = alpha2.split('');
+    consonants = letters.filter(x => !toRemove.has(x));
+  } else if (typeof(listOfArrays) === typeof(["hi"])) {
+    alpha2 = listOfArrays;
+    consonants = alpha2.filter(x => !toRemove.has(x));
+  } else {
+    consonants = alphasCopy.filter(x => !toRemove.has(x));
+  }
+  return consonants;
+}
+exports.consonants = consonants;
+
 // Python Random function
 class random {
   static randint(min, max) {

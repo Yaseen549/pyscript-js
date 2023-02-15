@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://syberstar.netlify.com/">
+  <a href="https://pyscript-js.netlify.com/">
     <img src="https://github.com/Yaseen549/pyscript-js/blob/main/imgs/logo.png" alt="PyScript.js logo" width="165" height="165">
   </a>
 </p>
@@ -19,7 +19,7 @@ Use python functions now in JavaScript
 <p>Place it just above the end body tag above all the script tags</p>
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.4/dist/js/pyscript.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.5/dist/js/pyscript.min.js" charset="utf-8"></script>
 ```
 
 ### Table of contents
@@ -32,12 +32,12 @@ Use python functions now in JavaScript
 ### Quick start
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v1.2.4.zip)
+- [Download the latest release](https://github.com/Yaseen549/pyscript-js/archive/refs/tags/v1.2.5.zip)
 - Clone the repo: `git clone https://github.com/Yaseen549/pyscript-js.git`
 - Install with [npm](https://www.npmjs.com/): `npm i pyscript-js`
 - Install with [yarn](https://www.yarnpkg.com): `yarn add pyscript-js`
 
-Read the [Getting started page](https://pyscript-js.syberstar.com/) for information on the Library contents, examples, and more.
+Read the [Getting started page](https://pyscript-js.netlify.app/) for information on the Library contents, examples, and more.
 
 ### Python Functions
 integrated python functions in JavaScript
@@ -56,11 +56,12 @@ len()
 round()
 max()
 min()
-sum()
+sum([])
 sorted()
 type()
 pow()
 abs()
+range()   # range(1,10) or range("a","z")
 
 # random class
 random.randint()
@@ -92,7 +93,13 @@ random.shuffle()
 
 # Play Around functions
 "".charList() # converts string into list of characters
-"".wordList() # converts string (Sentence) into list of Strings (words)
+"".wordList() # converts string(Sentence) into list of Strings(words)
+
+# En-glishers
+alphabet()    # Returns alphabet from "a" to "z"
+vowels()      # Returns vowels or Array/list. Eg: let a = vowels()/ a = vowels("Hello")
+consonants()  # Returns consonants or from [list/Array]/"String"
+
 ```
 
 ### Stub Code
@@ -116,7 +123,7 @@ index.html
 
   <!-- Adding Scripts -->
   <!-- Use it above all the Script Files to make use of python functions -->
-  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.4/dist/js/pyscript.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pyscript-js@1.2.5/dist/js/pyscript.min.js" charset="utf-8"></script>
   <!-- User Defined Scripts / Other Scripts below -->
   <script src="ExternalJsFile.js" charset="utf-8"></script>
   <!-- or -->

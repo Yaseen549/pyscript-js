@@ -1,6 +1,6 @@
 {
   "name": "pyscript-js",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "JavaScript for Python Developers",
   "main": "dist/js/pyscript-node.min.js",
   "scripts": {
@@ -16,14 +16,15 @@
     "pyscript-js",
     "js",
     "pythonjs",
-    "javascript"
+    "javascript",
+    "PyScript-node"
   ],
   "author": "Yaseen",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Yaseen549/pyscript-js/issues"
   },
-  "homepage": "https://pyscript-js.syberstar.com/",
+  "homepage": "https://pyscript-js.netlify.app/",
   "directories": {
     "test": "test"
   }

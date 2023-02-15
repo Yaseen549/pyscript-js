@@ -5,7 +5,7 @@ var input = prompt;
 let print = console.log;
 
 // js print() function
-function jsprint(){
+function jsprint() {
   window.print();
 }
 
@@ -118,6 +118,87 @@ function abs(param) {
   return Math.abs(param);
 }
 
+// range function
+const range = (start, end, step = 1) => {
+  let output = [];
+  if (typeof(start) == typeof(String())) {
+    start = start.charCodeAt(start)
+    end = end.charCodeAt(end)
+    for (let i = start; i <= end; i += step) {
+      output.push(String.fromCharCode(i))
+    }
+  } else {
+    if (typeof end === 'undefined') {
+      end = start;
+      start = 0;
+    }
+    for (let i = start; i < end; i += step) {
+      output.push(i);
+    }
+  }
+  return output;
+};
+const alphabet = () => {
+  const alpha = Array.from(Array(26)).map((e, i) => i + 97);
+  const alphabetLetters = alpha.map((x) => String.fromCharCode(x));
+  return alphabetLetters;
+}
+const vowels = (listOfArrays) => {
+  const vowelsList = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  let alpha2 = [];
+  var vowelsArr = [];
+  var vowelsFound = [];
+
+  if (typeof(listOfArrays) === typeof("String")) {
+    alpha2 = listOfArrays;
+    var letters = alpha2.split('');
+    for (var i in letters) {
+      if (vowelsList.includes(letters[i])) {
+        vowelsFound.push(letters[i]);
+        vowelsArr = vowelsFound;
+      }
+    }
+  } else if (typeof(listOfArrays) === typeof(["hi"])) {
+    alpha2 = listOfArrays;
+    const toRemove = new Set(vowelsList);
+    vowelsArr = alpha2.filter(x => toRemove.has(x));
+  } else {
+    vowelsArr = ["a","e","i","o","u"]
+    // alpha2 = Array.from(Array(26)).map((e, i) => i + 97);
+    // var alphabetVowels = alpha2.map((x) => String.fromCharCode(x));
+    // let c, i;
+    // for (i = 0; i <= alphabetVowels.length - 1; i++) {
+    //   c = alphabetVowels[i] // or s.charAt(i)
+    //   if (c == "a" || c == "e" || c == "i" || c == "o" || c == "u" ||
+    //     c == "A" || c == "E" || c == "I" || c == "O" || c == "U") {
+    //     // console.log(c)
+    //     vowelsArr.push(c)
+    //   }
+    // }
+  }
+  return vowelsArr;
+}
+const consonants = (listOfArrays) => {
+  alphasCopy = alphabet();
+  vowelsCopy = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  var consonantsFound = [];
+  let consonants;
+
+  const toRemove = new Set(vowelsCopy);
+
+  if (typeof(listOfArrays) === typeof("String")) {
+    alpha2 = listOfArrays;
+    var letters = alpha2.split('');
+    consonants = letters.filter(x => !toRemove.has(x));
+  } else if (typeof(listOfArrays) === typeof(["hi"])) {
+    alpha2 = listOfArrays;
+    consonants = alpha2.filter(x => !toRemove.has(x));
+  } else {
+    consonants = alphasCopy.filter(x => !toRemove.has(x));
+  }
+  return consonants;
+}
+
 // Python Random function
 class random {
   static randint(min, max) {
@@ -132,33 +213,48 @@ class random {
     return randomElement;
   }
   static shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
+    let currentIndex = array.length,
+      randomIndex;
     while (currentIndex != 0) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
       [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
+        array[randomIndex], array[currentIndex]
+      ];
     }
     return array;
   }
 }
 
-
-
 // dot functions
 String.prototype.upper = function() {
   return this.toUpperCase();
 }
+
 String.prototype.lower = function() {
   return this.toLowerCase();
 }
+
 String.prototype.title = function() {
   return this.toLowerCase().split(' ').map(function(word) {
     return word.replace(word[0], word[0].toUpperCase());
   }).join(' ');
 }
+
 String.prototype.capitalize = function() {
   return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
+String.prototype.charList = function() {
+  return Array.from(this);
+}
+
+String.prototype.wordList = function() {
+  return this.split(' ');
+}
+// index(): Returns the first appearance of a particular value.
+String.prototype.index = function(value) {
+  return this.indexOf(value);
 }
 
 // sort(): Sorts the list in ascending order. | exist ---
@@ -167,26 +263,20 @@ Array.prototype.append = function(value) {
   return this.push(value);
 }
 // extend(): Adds multiple elements to a list.
-Array.prototype.extend = function (value){
+Array.prototype.extend = function(value) {
   return this.concat(value)
 }
-// index(): Returns the first appearance of a particular value.
-String.prototype.index = function (value) {
-  return this.indexOf(value);
-}
-Array.prototype.index = function (value) {
+Array.prototype.index = function(value) {
   return this.indexOf(value);
 }
 // insert(): Adds a component at the required position.
-Array.prototype.insert = function ( index, item ) {
-    return this.splice( index, 0, item );
+Array.prototype.insert = function(index, item) {
+  return this.splice(index, 0, item);
 };
 // clear(): Removes all the elements from the list.
 Array.prototype.clear = function() {
-    this.splice(0, this.length);
+  this.splice(0, this.length);
 };
-
-
 // count(): Returns the number of elements with the required value.
 // Object.defineProperties(Array.prototype, {
 //     count: {
@@ -195,29 +285,20 @@ Array.prototype.clear = function() {
 //         }
 //     }
 // });
-Array.prototype.count = function (value){
-  return this.filter(x => x==value).length;
+Array.prototype.count = function(value) {
+  return this.filter(x => x == value).length;
 }
 // pop(): Removes the element at the required position. | exist --
 // remove(): Removes the primary item with the desired value.
-Array.prototype.remove = function(value){
+Array.prototype.remove = function(value) {
   let indexOfElem = this.indexOf(value);
   if (indexOfElem > -1) {
-      this.splice(indexOfElem, 1);
+    this.splice(indexOfElem, 1);
   }
   return this;
 }
-
 // reverse(): Reverses the order of the list. | exist --
 // copy():  Returns a duplicate of the list.
-Array.prototype.copy = function (){
+Array.prototype.copy = function() {
   return Array.from(this);
-}
-
-String.prototype.charList = function (){
-  return Array.from(this);
-}
-
-String.prototype.wordList = function (){
-  return this.split(' ');
 }
